@@ -12,6 +12,7 @@ import Table from './components/table/Table';
 import WorkoutsCompletedCard from './containers/cards/WorkoutsCompletedCard';
 import WorkoutsRemainingCard from './containers/cards/WorkoutsRemainingCard';
 import MetricTotalCard from './containers/cards/MetricTotalCard';
+import WorkoutTable from './containers/tables/WorkoutTable';
 
 
 // todo - rename file
@@ -29,7 +30,9 @@ class App extends Component {
               <WorkoutsRemainingCard />
               <MetricTotalCard />
             </Row>
-            <Table />
+            <Row>
+              <WorkoutTable />
+            </Row>
           </Main>
         </Content>
       </Fragment>
