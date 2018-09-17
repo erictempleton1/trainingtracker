@@ -4,8 +4,9 @@ import Content from '../content/Content';
 import Main from '../main/Main';
 import Navbar from '../navbar/Navbar';
 import Row from '../row/Row';
-import Sidebar from '../sidebar/Sidebar';
+// import Sidebar from '../sidebar/Sidebar';
 import Table from '../table/Table';
+import DashboardSidebar from '../../containers/sidebar/DashboardSidebar';
 
 import WorkoutsCompletedCard from '../../containers/cards/WorkoutsCompletedCard';
 import WorkoutsRemainingCard from '../../containers/cards/WorkoutsRemainingCard';
@@ -20,7 +21,7 @@ class Dashboard extends Component {
       <Fragment>
         <Navbar brand={"TrainingTracker"} />
         <Content>
-          <Sidebar />
+          <DashboardSidebar />
           <Main>
             <Row>
               <WorkoutsCompletedCard />
