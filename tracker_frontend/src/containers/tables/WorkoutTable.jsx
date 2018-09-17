@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Table from '../../components/table/Table.jsx';
+import Table from '../../components/table/Table';
 
 
 const headers = ['Header1', 'Header2', 'Header3'];
