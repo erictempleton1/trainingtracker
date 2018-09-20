@@ -1,4 +1,3 @@
-// todo - create cue sheet page (similar to dashboard)
 import React, { Component, Fragment } from 'react';
 
 import Content from '../content/Content';
@@ -6,6 +5,7 @@ import Main from '../main/Main';
 import Navbar from '../navbar/Navbar';
 import Row from '../row/Row';
 import CueSheetSidebar from '../../containers/sidebar/CueSheetSidebar';
+import CueSheetTable from '../../containers/tables/CueSheetTable';
 
 
 function CueSheet(props) {
@@ -16,7 +16,7 @@ function CueSheet(props) {
         <CueSheetSidebar />
         <Main>
           <Row>
-          {"hello"}
+            <CueSheetTable />
           </Row>
         </Main>
       </Content>
