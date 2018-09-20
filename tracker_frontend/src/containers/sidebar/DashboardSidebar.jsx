@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 import Sidebar from '../../components/sidebar/Sidebar';
 
@@ -6,17 +7,17 @@ import Sidebar from '../../components/sidebar/Sidebar';
 const dashboardLinks = (
   <Fragment>
     <li className="nav-item">
-      <a className="nav-link active" href="#">
-        Dashboard <span className="sr-only">(current)</span>
-      </a>
+      <Link className="nav-link active" to="/">
+        Dashboard
+      </Link>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">
+      <Link className="nav-link" to="/cuesheet">
         Cue Sheet
-      </a>
+      </Link>
     </li>
   </Fragment>
-)
+);
 
 function DashboardSidebar() {
   return (
